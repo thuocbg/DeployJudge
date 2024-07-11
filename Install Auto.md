@@ -49,9 +49,9 @@ npm install -g scratch-gui
 5. Cài đặt Site và Judge tự động - One-click deployment
 Tải về file cài đặt tự động và các file cấu hình mẫu.
 ```
-wget https://raw.githubusercontent.com/VietThienTran/DeploymentTools/main/VNOJ/sample-config/auto-install.sh
-wget https://raw.githubusercontent.com/VietThienTran/DeploymentTools/main/VNOJ/sample-config/local_settings.py
-wget https://raw.githubusercontent.com/VietThienTran/DeploymentTools/main/VNOJ/sample-config/judge01.yml
+wget https://raw.githubusercontent.com/thuocbg/DeployJudge/main/setup_dmoj.sh
+wget https://raw.githubusercontent.com/thuocbg/DeployJudge/main/local_settings.py
+wget https://raw.githubusercontent.com/thuocbg/DeployJudge/main/judge01.yml
 ```
 Thay thế một số thông số cho phù hợp với hệ thống.
 

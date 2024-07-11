@@ -17,11 +17,11 @@ Tùy theo thực tế và nhu cầu sử dụng, cấu hình và các thông s�
 
 ✅ Ubuntu 22.04 Server/2 Core/4 GB RAM/30 GB SSD
 
-✅ Username: devsmile
+✅ Username: thdt1234
 
 ✅ IP: 192.168.1.17/24
 ✅ Judgename: judge01
-✅ MySQL password: greenhat1998
+✅ MySQL password: thdt1234
 Cài đặt môi trường
 1. Cài đặt môi trường
 

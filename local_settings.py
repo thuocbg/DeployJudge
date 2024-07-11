@@ -33,7 +33,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dmoj',
         'USER': 'dmoj',
-        'PASSWORD': 'greenhat1998',
+        'PASSWORD': 'thdt1234',
         'HOST': '127.0.0.1',
         'OPTIONS': {
             'charset': 'utf8mb4',
@@ -117,7 +117,7 @@ SERVER_EMAIL = 'DMOJ: Modern Online Judge <errors@dmoj.ca>'
 # webserver to serve the static files. This is the directory where all the
 # static files DMOJ uses will be collected to.
 # You must configure your webserver to serve this directory as /static/ in production.
-STATIC_ROOT = '/home/devsmile/site/static'
+STATIC_ROOT = '/home/vnoi-docker/dmoj/site/static'
 
 # URL to access static files.
 STATIC_URL = '/static/'
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 # Uncomment to use hashed filenames with the cache framework.
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
-DMOJ_PROBLEM_DATA_ROOT = '/home/devsmile/site/problems/'
+DMOJ_PROBLEM_DATA_ROOT = '/home/vnoi-docker/dmoj/site/problems/'
 ############################################
 ########## DMOJ-specific settings ##########
 ############################################

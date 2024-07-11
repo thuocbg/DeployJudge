@@ -26,7 +26,7 @@ apt install mariadb-server libmysqlclient-dev
 ```
 sudo mariadb
 MariaDB [(none)]> CREATE DATABASE dmoj DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON dmoj.* TO 'dmoj'@'localhost' IDENTIFIED BY '<mariadb user password>';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON dmoj.* TO 'dmoj'@'localhost' IDENTIFIED BY 'thdt1234';
 MariaDB [(none)]> exit
 mariadb-tzinfo-to-sql /usr/share/zoneinfo | sudo mariadb -u root mysql
 ```

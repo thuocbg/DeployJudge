@@ -22,7 +22,11 @@ Tùy theo thực tế và nhu cầu sử dụng, cấu hình và các thông s�
 ✅ IP: 192.168.1.17/24
 ✅ Judgename: judge01
 ✅ MySQL password: greenhat1998
-
+Cài đặt môi trường
+/*
+sudo apt update
+sudo apt install nodejs npm
+*/
 Cài đặt Site và Judge tự động - One-click deployment
 Tải về file cài đặt tự động và các file cấu hình mẫu.
 

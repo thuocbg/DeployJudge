@@ -26,8 +26,10 @@ Cài đặt môi trường
 1. Cài đặt môi trường
 
 ```
+    sudo apt update
+    sudo apt install python3-pip
     sudo apt-get update && sudo apt-get install -y vim python-pip curl git
-       pip install docker-compose
+    pip install docker-compose
 ```
 2. Cài Docker 
 

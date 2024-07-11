@@ -1,19 +1,10 @@
 1. Cài đặt các điều kiện tiên quyết
-1.1. Cập nhật danh sách gói:
+Cập nhật danh sách gói:
 ```
 apt update
-```
-1.2. Cài đặt các gói cần thiết:
-```
 apt install git gcc g++ make python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev gettext curl redis-server
-```
-1.3. Cài đặt Node.js:
-```
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E  -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 apt install nodejs
-```
-1.4. Cài đặt các công cụ CSS:
-```
 npm install -g sass postcss-cli postcss autoprefixer
 ```
 2. Tạo cơ sở dữ liệu

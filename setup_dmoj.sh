@@ -13,7 +13,7 @@ sudo npm install -g sass postcss-cli postcss autoprefixer
 sudo apt install -y mariadb-server libmysqlclient-dev
 sudo service mysql start
 sudo mysql -e "CREATE DATABASE dmoj DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;"
-sudo mysql -e "GRANT ALL PRIVILEGES ON dmoj.* TO 'dmoj'@'localhost' IDENTIFIED BY 'greenhat1998';"
+sudo mysql -e "GRANT ALL PRIVILEGES ON dmoj.* TO 'dmoj'@'localhost' IDENTIFIED BY 'thdt1234';"
 mariadb-tzinfo-to-sql /usr/share/zoneinfo | sudo mariadb -u root mysql
 
 # Tạo và kích hoạt môi trường ảo
@@ -21,7 +21,7 @@ virtualenv venv
 . venv/bin/activate
 
 # Sao chép mã nguồn từ GitHub và cài đặt các thư viện Python
-git clone --recursive https://github.com/VNOI-Admin/OJ site
+git clone --recursive https://github.com/VNOI-Admin/OJ.git
 cd site
 pip3 install mysqlclient==2.1.1
 pip3 install lxml[html_clean]
@@ -34,7 +34,7 @@ mkdir problems media static
 
 # Sao chép cài đặt mẫu và cấu hình
 cd dmoj
-wget https://raw.githubusercontent.com/VietThienTran/DeploymentTools/main/VNOJ/sample-config/local_settings.py
+wget https://raw.githubusercontent.com/thuocbg/DeployJudge/main/local_settings.py
 cd ..
 
 # Tạo và chuẩn bị dữ liệu
@@ -49,10 +49,10 @@ python3 manage.py loaddata demo
 
 # Thêm cài đặt cho judge và cài đặt DMOJ
 cd problems
-wget https://raw.githubusercontent.com/VietThienTran/DeploymentTools/main/VNOJ/sample-config/judge01.yml
+wget https://raw.githubusercontent.com/thuocbg/DeployJudge/main/judge01.yml
 cd ..
 python3 manage.py addjudge judge01 "abcdefghijklmnopqrstuvwxyz"
-pip3 install dmoj
+python3 -m pip install dmoj
 
 # Kết thúc và thông báo
 echo "Cài đặt và cấu hình hệ thống DMOJ hoàn tất!"

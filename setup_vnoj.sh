@@ -163,6 +163,12 @@ cd ..
 # Khởi động Judge Server
 docker-compose up -d judge
 
+# Cài đặt hỗ trợ chấm file .sb3
+git clone https://github.com/judge0/judge0-vscode.git
+cd judge0-vscode
+./init.sh
+cd ..
+
 # Khởi động tất cả các dịch vụ
 docker-compose up -d
 

@@ -61,7 +61,7 @@ cat <<EOT > nginx/conf.d/nginx.conf
 server {
     listen       80;
     listen       [::]:80;
-    server_name  oj.vnoi.info;
+    server_name  77.37.47.84;
     client_max_body_size 48M;
 
     add_header X-UA-Compatible "IE=Edge,chrome=1";

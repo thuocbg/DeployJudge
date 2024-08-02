@@ -33,11 +33,11 @@ services:
       - "/etc/timezone:/etc/timezone:ro"
     
   judge-server:
-    # image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/judge_server
+    image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/judge_server
     # 原版镜像
     # image: registry.cn-hangzhou.aliyuncs.com/wenjian_oj/judgeserver
     # 开发版镜像
-    image: luyencode/judge-server
+    #image: luyencode/judge-server
     # 稳定版镜像
     container_name: judge-server
     restart: always
@@ -64,8 +64,8 @@ services:
       # - judger_debug=1
   
   oj-backend:
-    #image: registry.cn-qingdao.aliyuncs.com/wenjian_oj/backend
-    image: luyencode/oj-backend
+    image: registry.cn-qingdao.aliyuncs.com/wenjian_oj/backend
+    #image: luyencode/oj-backend
     container_name: oj-backend
     restart: always
     depends_on:

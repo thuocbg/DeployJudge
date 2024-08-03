@@ -66,7 +66,8 @@ services:
   
   oj-backend:
     #image: registry.cn-qingdao.aliyuncs.com/wenjian_oj/backend
-    image: luyencode/oj-backend
+    #image: luyencode/oj-backend
+    image: jywglady/dmoj-site
     container_name: oj-backend
     restart: always
     depends_on:
